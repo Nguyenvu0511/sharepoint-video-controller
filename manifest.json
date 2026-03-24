@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "SharePoint Video Controller (YouTube Style)",
+  "version": "1.0",
+  "description": "Thêm phím tắt Space, K, F và Mũi tên để điều khiển video trên SharePoint như YouTube.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://studyvn.sharepoint.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
